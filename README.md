@@ -1,3 +1,3 @@
-# react_google_mern
+# Booth Pros
 
 TODO fill out instructions
