@@ -1,4 +1,5 @@
 # Booth Pros
+![Booth-Pros](https://i.imgur.com/YjNgkGA.png)
 
 A all-in-one app for photo booth businesses and customers.<br>
 
@@ -56,6 +57,35 @@ A all-in-one app for photo booth businesses and customers.<br>
 * `npm install yarn`<br>
 <h4>Dev dependencies:</h4>
 * `npm install nodemon`<br>
+<br>
+
+<h1>Screenshots</h1>
+<h4>Website</h4>
+![Screen Shot 2019-08-13 at 5.38.44 PM](https://i.imgur.com/MJ6Ulwj.png)<br>
+<br>
+
+<h4>Tablet</h4>
+![Screen Shot 2019-08-13 at 5.42.46 PM](https://i.imgur.com/1r7y2fo.png)<br>
+<br>
+
+<h4>Phone</h4>
+![Screen Shot 2019-08-13 at 5.42.19 PM](https://i.imgur.com/iwbXnH5.png)<br>
+<br>
+
+<h4>Client Dashboard</h4>
+![Screen Shot 2019-08-14 at 10.23.18 AM](https://i.imgur.com/G2MhREn.png)<br>
+<br>
+
+<h4>Admin Dashboard</h4>
+![Screen Shot 2019-08-14 at 10.23.53 AM](https://i.imgur.com/7dbrXxx.png)<br>
+<br>
+
+<h4>Create a booking</h4>
+![Screen Shot 2019-08-14 at 10.24.15 AM](https://i.imgur.com/JW4ZOgb.png)<br>
+<br>
+
+
+
 
 
 
