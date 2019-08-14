@@ -7,6 +7,7 @@ export class About extends Component {
             <div className = "p-grid">
                 <div className = "p-col-12">
                     <div className = "card">
+                    <img src="assets/layout/images/Booth-Pros.png" alt="" width="300" />
                         <h1>
                             Welcome to Booth Pros!
                         </h1>

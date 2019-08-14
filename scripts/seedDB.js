@@ -1,10 +1,10 @@
 const mongoose = require('mongoose')
 const User = require("../models/user")
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/react-google-mern")
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/booth-pros")
 
 const testUser = {
-    email: "test@test.com",
+    email: "djprado@boothpros.com",
     password: "testtest"
 }
 // Remove all of our users and then try and make a new one

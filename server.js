@@ -42,7 +42,7 @@ app.use(function(req, res) {
     res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/react-google-mern")
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/booth-pros")
 
 app.listen(PORT, () => console.log(`I am listening... (on port ${PORT})`))
 

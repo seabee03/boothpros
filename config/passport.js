@@ -3,6 +3,9 @@ const LocalStrategy = require("passport-local").Strategy;
 const User = require('../models/user')
 
 // Local Strategy
+
+
+
 passport.use(
     new LocalStrategy(
         {
@@ -21,7 +24,8 @@ passport.use(
                         return done(null, false, { message: "Incorrect Email or Password"}) // we don't specify for security sake
                     } else {
                         // All good, proceed
-                        return done(null, dbUser)
+                        return done(null, dbUser);
+                        
                     }
                 })
             }).catch(err => console.log(err))

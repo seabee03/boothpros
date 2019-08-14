@@ -1,12 +1,10 @@
 import React from 'react';
-import {Redirect} from "react-router-dom"
 import axios from 'axios';
-class User extends React.Component {
+class App extends React.Component {
   state = {
-    email:'',
-    password:'',
-    welcomeEmail: "",
-    redirect: false
+    email:'test@test.com',
+    password:'testtest',
+    welcomeEmail: ""
   }
 
   handleInput = event => {
@@ -23,7 +21,7 @@ class User extends React.Component {
     const {email,password} = this.state
     axios.post("/api/login", {email, password})
       .then(result => {
-        this.setState({redirect:true})
+        console.log(result.data)
         this.loadProfileInfo()
       })
   }
@@ -47,22 +45,16 @@ class User extends React.Component {
   componentDidMount(){
     this.loadProfileInfo()
   }
-  renderRedirect = () =>{
-      if(this.state.redirect){
-        return <Redirect to="/client-dashboard" />
-      }
-      return ""
-  }
+
   render(){
     return (
       <div>
-          {this.renderRedirect()}
         <h1>{this.state.welcomeEmail.length > 0 
           ? "Welcome " + this.state.welcomeEmail
           : "Login"}</h1>
         <form>
           <input onChange={this.handleInput} name="email" value={this.state.email} type="text"/>
-          <input onChange={this.handleInput} name="password" value={this.state.password} type="password"/>
+          <input onChange={this.handleInput} name="password" value={this.state.email} type="password"/>
           <button onClick={this.handleFormSubmit}>Login</button>
           <button onClick={this.handleFormLogout}>Logout</button>
         </form>
@@ -71,4 +63,4 @@ class User extends React.Component {
   }
 }
 
-export default User;
+export default App;
